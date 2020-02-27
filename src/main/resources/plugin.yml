@@ -1,0 +1,13 @@
+name: 'ClickCommands'
+description: 'Create commands that execute when you interact with blocks!'
+version: '1.0.0'
+api-version: '1.8'
+author: 'Qhucy'
+main: 'com.qhucy.clickcommands.ClickCommands'
+commands:
+  clickcommands:
+    description: 'Core command for this plugin to create, edit, and remove click commands.'
+    usage: '</clickcommands [create:edit:remove:clear:list:save:load] [command]>'
+    permission: 'clickcommands.admin'
+    permission-message: '§cNo permission.'
+    aliases: ['cc', 'clickcommand', 'serversign', 'serversigns', 'ss', 'sign', 'signs', 'commandsign', 'commandsigns']
