@@ -17,16 +17,16 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
   - **/clickcommands clear**: Clears all commands to the click command block you're looking at.  
   - **/clickcommands remove [number/command]**: Removes a certain command from the click command block you're looking at.  
     - Example: **/clickcommands remove 1**, **/clickcommands remove Hello World!**.  
-  - **/clickcommands edit [number] command [command]**: Change a command in the click commands block you're looking at to another one.  
-    - Example: **/clickcommands edit 1 broadcast Goodbye World!**.  
-  - **/clickcommands edit [number] trigger [trigger]**: Change a list of triggers in a command in the click commands block you're looking at to another list of triggers.  
+  - **/clickcommands [number] edit command [command]**: Change a command in the click commands block you're looking at to another one.  
+    - Example: **/clickcommands 1 edit broadcast Goodbye World!**.  
+  - **/clickcommands [number] edit triggers [triggers]**: Change a list of triggers in a command in the click commands block you're looking at to another list of triggers.  
     - Note: You don't need the '-' to signify the triggers, but you can use it.  
-    - Example: **/clickcommands edit 1 trigger rightclick jump**.  
-  - **/clickcommands edit [number] cooldown [time:type]**: Change the duration or type of cooldown in a command in the click commands block you're looking at to another cooldown duration or type.  
-    - Example: **/clickcommands edit 1 cooldown player**, **/clickcommands edit 1 cooldown 30seconds**.  
-  - **/clickcommands edit [number] block [block]**: Change the type of block needed to activate this command. Put 'none' to have it work on all block types.
-    - Example: **/clickcommands edit 1 block stone**.
-  - **/clickcommands edit [number] weight [number]**: Change the permission weight of this command. Only players with this weight permission can use the command. Put **0** to have none.  
+    - Example: **/clickcommands 1 edit triggers rightclick jump move**.  
+  - **/clickcommands [number] edit cooldown [time:type]**: Change the duration or type of cooldown in a command in the click commands block you're looking at to another cooldown duration or type.  
+    - Example: **/clickcommands 1 edit cooldown player**, **/clickcommands edit 1 cooldown 30seconds**.  
+  - **/clickcommands [number] edit block [block]**: Change the type of block needed to activate this command. Put 'none' to have it work on all block types.
+    - Example: **/clickcommands 1 edit block stone**.
+  - **/clickcommands [number] edit weight [number]**: Change the permission weight of this command. Only players with this weight permission can use the command. Put **0** to have none.  
   - **/clickcommands editor**: Go into ClickCommands Editor mode. ClickCommands Blocks display as emerald blocks. Left click to select a ClickCommands Block. Use the normal commands to modify it or right click in a new location to move its location. Use this command again to disable this mode.  
   - **/clickcommands select [location]**: Select a ClickCommands block at the target location. Use the normal commands to modify it. After 5 minutes it will automatically be deselected.  
     - Example: **/clickcommands select world -492 64 91**, **/clickcommands select -492 64 91**.  
