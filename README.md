@@ -9,17 +9,20 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
     - Add **-jump** at the end to activate the click command from jumping.  
     - Add **-playercooldown [time]** at the end to set a per-player cooldown on using this click commands block. This will override any current cooldown setting.  
     - Add **-globalcooldown [time]** at the end to set a global cooldown on using the click commands block. This will override any current cooldown setting.  
+    - Add **-block [block]** at the end to make this command activate only when the block at this location is a certain type. If this isn't an option, it will work on all block types.  
     - Example: **/clickcommands add broadcast Hello World! -console -bothclicks -jump -playercooldown 10seconds**.  
   - **/clickcommands clear**: Clears all commands to the click command block you're looking at.  
   - **/clickcommands remove [number/command]**: Removes a certain command from the click command block you're looking at.  
     - Example: **/clickcommands remove 1**, **/clickcommands remove Hello World!**.  
   - **/clickcommands edit [number] command [command]**: Change a command in the click commands block you're looking at to another one.  
-    - Example: **/clickcommands edit 1 broadcast Goodbye World!**  
+    - Example: **/clickcommands edit 1 broadcast Goodbye World!**.  
   - **/clickcommands edit [number] trigger [trigger]**: Change a list of triggers in a command in the click commands block you're looking at to another list of triggers.  
     - Note: You don't need the '-' to signify the triggers, but you can use it.  
-    - Example: **/clickcommands edit 1 trigger rightclick jump**  
+    - Example: **/clickcommands edit 1 trigger rightclick jump**.  
   - **/clickcommands edit [number] cooldown [time:type]**: Change the duration or type of cooldown in a command in the click commands block you're looking at to another cooldown duration or type.  
-    - Example: **/clickcommands edit 1 cooldown playercooldown**, **/clickcommands edit 1 cooldown 30seconds**  
+    - Example: **/clickcommands edit 1 cooldown playercooldown**, **/clickcommands edit 1 cooldown 30seconds**.  
+  - **/clickcommands edit [number] block [block]**: Change the type of block needed to activate this command. Put 'none' to have it work on all block types.
+    - Example: **/clickcommands edit 1 block stone**.  
   - **/clickcommands editor**: Go into ClickCommands Editor mode. ClickCommands Blocks display as emerald blocks. Left click to select a ClickCommands Block. Use the normal commands to modify it or right click in a new location to move its location. Use this command again to disable this mode.  
   - **/clickcommands select [location]**: Select a ClickCommands block at the target location. Use the normal commands to modify it. After 5 minutes it will automatically be deselected.  
     - Example: **/clickcommands select world -492 64 91**, **/clickcommands select -492 64 91**.  
