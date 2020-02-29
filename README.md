@@ -5,13 +5,13 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
   - **/clickcommands info**: Shows information about the click commands block you're looking at.  
   - **/clickcommands add [command]**: Adds a click command to the block you're looking at.  
     - Add **-console** at the end to execute the command from console, or **-player** by a player.  
-    - Add **-rightclick** at the end to activate the click command from a right click, **-leftclick** from a left click, or **-bothclicks** from either right or left click.  
+    - Add **-rightclick** at the end to activate the click command from a right click, **-leftclick** from a left click.  
     - Add **-jump** at the end to activate the click command from jumping.  
     - Add **-cooldown [time]** at the end to set cooldown on using this click commands block. By default this is per-player.  
     - Add **-cooldowntype [type]** at the end to change the type of cooldown it is. Options are **player**, **global**, and **none**.  
     - Add **-block [block]** at the end to make this command activate only when the block at this location is a certain type. If this isn't an option, it will work on all block types.  
     - Add **weight [number]** at the end to give this command a permission weight. Only players with this weight permission can use the command.
-    - Example: **/clickcommands add broadcast Hello World! -console -bothclicks -jump -playercooldown 10seconds**.  
+    - Example: **/clickcommands add broadcast Hello World! -console -rightclick -jump -playercooldown 10seconds**.  
   - **/clickcommands clear**: Clears all commands to the click command block you're looking at.  
   - **/clickcommands remove [number/command]**: Removes a certain command from the click command block you're looking at.  
     - Example: **/clickcommands remove 1**, **/clickcommands remove Hello World!**.  
