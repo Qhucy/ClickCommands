@@ -7,6 +7,8 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
     - Add **-console** at the end to execute the command from console, or **-player** by a player.  
     - Add **-rightclick** at the end to activate the click command from a right click, **-leftclick** from a left click.  
     - Add **-jump** at the end to activate the click command from jumping.  
+    - Add **-move** at the end to activate the click command from moving over the block.  
+    - Add **-bow** at the end to activate the click command from shooting an arrow at the block.
     - Add **-cooldown [time]** at the end to set cooldown on using this click commands block. By default this is per-player.  
     - Add **-cooldowntype [type]** at the end to change the type of cooldown it is. Options are **player**, **global**, and **none**.  
     - Add **-block [block]** at the end to make this command activate only when the block at this location is a certain type. If this isn't an option, it will work on all block types.  
