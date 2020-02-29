@@ -16,6 +16,7 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
     - Add **-owner [player]** at the end to set the owner of this ClickCommand to someone else.  
     - Example: **/clickcommands add broadcast Hello World! -console -rightclick -jump -playercooldown 10seconds**.  
   - **/clickcommands clear**: Clears all commands to the click command block you're looking at.  
+  - **/clickcommands clearall**: Clears every ClickCommand on the server.  
   - **/clickcommands remove [number/command]**: Removes a certain command from the click command block you're looking at.  
     - Example: **/clickcommands remove 1**, **/clickcommands remove Hello World!**.  
   - **/clickcommands [number] edit command [command]**: Change a command in the click commands block you're looking at to another one.  
@@ -40,8 +41,8 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
 
 # Permissions
 **Note: Use 'clickcommands.*' to give someone all ClickCommands permissions.**  
-  - **clickcommands.info**: Access to '/clickcommands info'.  
-  - **clickcommands.add**: Access to '/clickcommands add'.  
+  - **clickcommands.info**: Access to */clickcommands info*.  
+  - **clickcommands.add**: Access to */clickcommands add*.  
   - **clickcommands.add.sender.player**: Access to add/edit a ClickCommand to a player sender.  
   - **clickcommands.add.sender.console**: Access to add/edit a ClickCommand to a console sender.  
   - **clickcommands.add.trigger.rightclick**: Access to add/edit ClickCommand triggers to rightclick.  
@@ -56,12 +57,13 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
   - **clickcommands.add.weight**: Access to add/edit a ClickCommand to have a weight.  
   - **clickcommands.add.owner**: Access to edit a ClickCommand owner.  
   - **clickcommands.add.other**: Access to add/edit ClickCommands other people's ClickCommands.  
-  - **clickcommands.clear**: Access to '/clickcommands clear'.  
-  - **clickcommands.remove**: Access to '/clickcommands remove'.  
-  - **clickcommands.edit**: Access to '/clickcommands edit'.  
-  - **clickcommands.list**: Access to '/clickcommands list'.  
-  - **clickcommands.save**: Access to '/clickcommands save'.  
-  - **clickcommands.load**: Access to '/clickcommands load'.  
+  - **clickcommands.clear**: Access to */clickcommands clear*.  
+  - **clickcommands.clearall**: Access to *clickcommands clearall*.  
+  - **clickcommands.remove**: Access to */clickcommands remove*.  
+  - **clickcommands.edit**: Access to */clickcommands edit*.  
+  - **clickcommands.list**: Access to */clickcommands list*.  
+  - **clickcommands.save**: Access to */clickcommands save*.  
+  - **clickcommands.load**: Access to */clickcommands load*.  
   - **clickcommands.use.[weight]**: Access to use signs with the specified weight number.  
 
 # GitHub Open Source
