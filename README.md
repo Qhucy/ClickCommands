@@ -68,4 +68,4 @@ Open source spigot plugin for minecraft. Create commands that execute when you i
 If you want to contribute to improving this plugin any way, feel free to visit the GitHub for this plugin: **https://github.com/Qhucy/ClickCommands**.
 
 # Help
-If you need help with this plugin join my discord: **https://discord.gg/a5bhCHa** and use the **general-support** channel.
+If you need help with this plugin join my discord: **https://discord.gg/a5bhCHa**.  
